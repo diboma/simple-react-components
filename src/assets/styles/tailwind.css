@@ -1,0 +1,28 @@
+@config "../../../tailwind.config.js";
+@import 'tailwindcss';
+
+@layer base {
+  h1 {
+    @apply mb-4 text-3xl font-semibold;
+  }
+
+  h2 {
+    @apply mb-3 text-2xl font-semibold;
+  }
+
+  h3 {
+    @apply mb-2 text-xl font-semibold;
+  }
+
+  h4 {
+    @apply mb-1 text-lg font-semibold;
+  }
+
+  h5 {
+    @apply mb-1 text-base font-semibold;
+  }
+
+  p {
+    @apply mb-4 text-base;
+  }
+}
