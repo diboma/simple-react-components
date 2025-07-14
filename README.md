@@ -107,14 +107,16 @@ npm run build
 
 ```
 src/
-├── components/          # Reusable React components
 ├── assets/
-│   ├── styles/         # CSS files for each variant
-│   └── scripts/        # Framework-specific JS
-├── App-bootstrap.tsx   # Bootstrap-styled app
-├── App-tailwind.tsx    # Tailwind-styled app
-├── App-vanilla.tsx     # Vanilla CSS app
-└── main.tsx           # Dynamic entry point
+│   ├── scripts/          # Framework-specific JS
+│   └── styles/           # CSS files for each variant
+├── components/           # Reusable React components
+├── lib/                  # variants and utilities
+├── stories/              # Ladle stories for components
+├── App-bootstrap.tsx     # Bootstrap-styled app
+├── App-tailwind.tsx      # Tailwind-styled app
+├── App-vanilla.tsx       # Vanilla CSS app
+└── main.tsx              # Dynamic entry point
 ```
 
 The setup automatically loads the correct App component and styles based on your `.env` configuration.
