@@ -120,3 +120,9 @@ src/
 ```
 
 The setup automatically loads the correct App component and styles based on your `.env` configuration.
+
+## 🛑 No Pull Requests, Please
+
+Thanks for checking out this project! It's built as a fun and flexible React playground and isn't currently accepting external contributions.
+
+Feel free to fork it, remix it, build cool stuff with it — just know that any pull requests will be kindly ignored.
