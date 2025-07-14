@@ -6,15 +6,18 @@ type Variant =
   | 'primaryOutline'
   | 'secondary'
   | 'secondaryOutline'
-  | 'info'
-  | 'infoOutline'
   | 'success'
   | 'successOutline'
-  | 'warning'
-  | 'warningOutline'
   | 'danger'
   | 'dangerOutline'
-  | 'ghost'
+  | 'warning'
+  | 'warningOutline'
+  | 'info'
+  | 'infoOutline'
+  | 'light'
+  | 'lightOutline'
+  | 'dark'
+  | 'darkOutline'
   | null
   | undefined
 
@@ -39,7 +42,6 @@ const Button = ({
   ...props
 }: Props) => {
   const variantClass = getActiveVariantMap()
-
   const variantStyle = variant ? (variantClass?.Button?.[variant] ?? '') : ''
   const sizeStyle = size ? (variantClass?.ButtonSize?.[size] ?? '') : ''
 

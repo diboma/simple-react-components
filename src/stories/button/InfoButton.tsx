@@ -1,10 +1,15 @@
 import Button from '@/components/Button'
 import { CodeBlock } from '@/stories/utils/CodeBlock'
+import { containerStyles, mappingStyles } from '@/stories/utils/styles'
 
 const InfoButton = () => {
+  const currentMapping = import.meta.env.VITE_VARIANT_MAPPING || 'VANILLA'
+
   return (
-    <main style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>
+    <main style={containerStyles}>
       <h1>Info Button</h1>
+
+      <span style={mappingStyles}>{currentMapping}</span>
 
       <h2>Filled</h2>
 

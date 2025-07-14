@@ -22,8 +22,18 @@ export default {
   },
 }
 
-export const defaultBtnStyle = `
-rounded-md px-4 py-2 text-sm font-medium focus-visible:ring-gray-300
-focus-visible:outline-hidden focus-visible:ring-2 focus-visible:ring-offset-2 
-transition-colors duration-200 cursor-pointer
-shadow-sm active:scale-95 transition duration-100`
+export const defaultTailwindStyles = {
+  button: `
+    rounded-md px-4 py-2 text-sm font-medium focus-visible:ring-gray-300
+    focus-visible:outline-hidden focus-visible:ring-2 focus-visible:ring-offset-2 
+    cursor-pointer shadow-sm active:scale-95 transition duration-100
+  `,
+  alert: `
+    rounded-md px-4 py-3 text-sm font-medium border shadow-sm
+    transition-opacity duration-200
+  `,
+  badge: `
+    inline-block px-2.5 py-0.5 text-xs font-medium rounded-full 
+    border border-transparent shadow-sm transition-colors duration-200
+  `,
+}

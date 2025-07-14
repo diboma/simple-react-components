@@ -2,12 +2,12 @@ import Button from '@/components/Button'
 import { CodeBlock } from '@/stories/utils/CodeBlock'
 import { containerStyles, mappingStyles } from '@/stories/utils/styles'
 
-const SecondaryButton = () => {
+const LightButton = () => {
   const currentMapping = import.meta.env.VITE_VARIANT_MAPPING || 'VANILLA'
 
   return (
     <main style={containerStyles}>
-      <h1>Secondary Button</h1>
+      <h1>Light Button</h1>
 
       <span style={mappingStyles}>{currentMapping}</span>
 
@@ -15,31 +15,31 @@ const SecondaryButton = () => {
 
       <div>
         <h4>Small Button</h4>
-        <Button variant="secondary" size="sm">
+        <Button variant="light" size="sm">
           Small Button
         </Button>
         <CodeBlock
-          code={`<Button variant="secondary" size="sm">Small Button</Button>`}
+          code={`<Button variant="light" size="sm">Small Button</Button>`}
         />
       </div>
 
       <div>
         <h4>Medium Button</h4>
-        <Button variant="secondary" size="md">
+        <Button variant="light" size="md">
           Medium Button
         </Button>
         <CodeBlock
-          code={`<Button variant="secondary" size="md">Medium Button</Button>`}
+          code={`<Button variant="light" size="md">Medium Button</Button>`}
         />
       </div>
 
       <div>
         <h4>Large Button</h4>
-        <Button variant="secondary" size="lg">
+        <Button variant="light" size="lg">
           Large Button
         </Button>
         <CodeBlock
-          code={`<Button variant="secondary" size="lg">Large Button</Button>`}
+          code={`<Button variant="light" size="lg">Large Button</Button>`}
         />
       </div>
 
@@ -47,35 +47,35 @@ const SecondaryButton = () => {
 
       <div>
         <h4>Small Button</h4>
-        <Button variant="secondaryOutline" size="sm">
+        <Button variant="lightOutline" size="sm">
           Small Button
         </Button>
         <CodeBlock
-          code={`<Button variant="secondaryOutline" size="sm">Small Button</Button>`}
+          code={`<Button variant="lightOutline" size="sm">Small Button</Button>`}
         />
       </div>
 
       <div>
         <h4>Medium Button</h4>
-        <Button variant="secondaryOutline" size="md">
+        <Button variant="lightOutline" size="md">
           Medium Button
         </Button>
         <CodeBlock
-          code={`<Button variant="secondaryOutline" size="md">Medium Button</Button>`}
+          code={`<Button variant="lightOutline" size="md">Medium Button</Button>`}
         />
       </div>
 
       <div>
         <h4>Large Button</h4>
-        <Button variant="secondaryOutline" size="lg">
+        <Button variant="lightOutline" size="lg">
           Large Button
         </Button>
         <CodeBlock
-          code={`<Button variant="secondaryOutline" size="lg">Large Button</Button>`}
+          code={`<Button variant="lightOutline" size="lg">Large Button</Button>`}
         />
       </div>
     </main>
   )
 }
 
-export default SecondaryButton
+export default LightButton
