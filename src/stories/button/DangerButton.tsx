@@ -1,15 +1,14 @@
-import Button from '@/components/Button'
 import { CodeBlock } from '@/stories/utils/CodeBlock'
 import { containerStyles, mappingStyles } from '@/stories/utils/styles'
+import { CURRENT_VARIANT_MAPPING } from '@/lib/consts'
+import Button from '@/components/Button'
 
 const DangerButton = () => {
-  const currentMapping = import.meta.env.VITE_VARIANT_MAPPING || 'VANILLA'
-
   return (
     <main style={containerStyles}>
       <h1>Danger Button</h1>
 
-      <span style={mappingStyles}>{currentMapping}</span>
+      <span style={mappingStyles}>{CURRENT_VARIANT_MAPPING}</span>
 
       <h2>Filled</h2>
 

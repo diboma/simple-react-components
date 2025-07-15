@@ -1,10 +1,9 @@
+import { CURRENT_VARIANT_MAPPING } from './consts'
 import { bootstrapVariantMap } from './bootstrapVariants'
 import { tailwindVariantMap } from './tailwindVariants'
 
-const variantSource = import.meta.env.VITE_VARIANT_MAPPING
-
 export const getActiveVariantMap = () => {
-  switch (variantSource) {
+  switch (CURRENT_VARIANT_MAPPING) {
     case 'bootstrap':
       return bootstrapVariantMap
     case 'tailwind':

@@ -1,12 +1,11 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
-
-const variant = import.meta.env.VITE_VARIANT_MAPPING
+import { CURRENT_VARIANT_MAPPING } from './lib/consts.ts'
 
 async function loadApp() {
   let AppComponent
 
-  switch (variant) {
+  switch (CURRENT_VARIANT_MAPPING) {
     case 'bootstrap':
       await import('@/assets/scripts/bootstrap.ts')
       AppComponent = (await import('./App-bootstrap.tsx')).default

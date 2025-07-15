@@ -1,16 +1,15 @@
 import { CodeBlock } from '@/stories/utils/CodeBlock'
 import { containerStyles, mappingStyles } from '@/stories/utils/styles'
+import { CURRENT_VARIANT_MAPPING } from '@/lib/consts'
 import { Story } from '@ladle/react'
 import Badge from '@/components/Badge'
 
 export const BadgeStory: Story = () => {
-  const currentMapping = import.meta.env.VITE_VARIANT_MAPPING || 'VANILLA'
-
   return (
     <main style={containerStyles}>
       <h1>Badge</h1>
 
-      <span style={mappingStyles}>{currentMapping}</span>
+      <span style={mappingStyles}>{CURRENT_VARIANT_MAPPING}</span>
 
       <div style={{ marginBottom: '1rem' }}>
         <Badge variant="primary">primary</Badge>
