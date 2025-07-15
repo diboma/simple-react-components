@@ -42,4 +42,9 @@ export const bootstrapVariantMap = {
     light: 'badge bg-light',
     dark: 'badge bg-dark',
   },
+  Checkbox: {
+    container: 'form-check',
+    input: 'form-check-input',
+    label: 'form-check-label',
+  },
 }

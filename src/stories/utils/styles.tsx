@@ -18,7 +18,7 @@ export const containerStyles: React.CSSProperties = {
   flexDirection: 'column',
   gap: '1rem',
   minWidth: 320,
-  maxWidth: 600,
+  maxWidth: 640,
   margin: '0 auto',
   marginBottom: '2rem',
 }
