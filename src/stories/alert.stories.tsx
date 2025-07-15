@@ -1,5 +1,5 @@
 import { CodeBlock } from '@/stories/utils/CodeBlock'
-import { containerStyles, mappingStyles } from '@/stories/utils/styles'
+import { containerStyles, currentMappingStyles } from '@/stories/utils/styles'
 import { CURRENT_VARIANT_MAPPING } from '@/lib/consts'
 import { Story } from '@ladle/react'
 import Alert from '@/components/Alert'
@@ -9,7 +9,7 @@ export const AlertStory: Story = () => {
     <main style={containerStyles}>
       <h1>Alert</h1>
 
-      <span style={mappingStyles}>{CURRENT_VARIANT_MAPPING}</span>
+      <span style={currentMappingStyles}>{CURRENT_VARIANT_MAPPING}</span>
 
       <div style={{ marginBottom: '1rem' }}>
         <Alert variant="primary">This is a primary alert!</Alert>

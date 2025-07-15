@@ -1,5 +1,5 @@
 import { CodeBlock } from '@/stories/utils/CodeBlock'
-import { containerStyles, mappingStyles } from '@/stories/utils/styles'
+import { containerStyles, currentMappingStyles } from '@/stories/utils/styles'
 import { CURRENT_VARIANT_MAPPING } from '@/lib/consts'
 import Button from '@/components/Button'
 
@@ -8,7 +8,7 @@ const PrimaryButton = () => {
     <main style={containerStyles}>
       <h1>Primary Button</h1>
 
-      <span style={mappingStyles}>{CURRENT_VARIANT_MAPPING}</span>
+      <span style={currentMappingStyles}>{CURRENT_VARIANT_MAPPING}</span>
 
       <h2>Filled</h2>
 
