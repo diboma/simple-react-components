@@ -11,7 +11,7 @@
         " github"
       ],
       "locStart": 3,
-      "locEnd": 16,
+      "locEnd": 29,
       "filePath": "src/stories/_github.stories.tsx",
       "namedExport": "GitHubStory",
       "meta": {}
