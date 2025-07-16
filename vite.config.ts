@@ -23,6 +23,7 @@ export default defineConfig(({ mode }) => {
   }
 
   return {
+    base: '/simple-react-components/',
     plugins,
     resolve: {
       alias: {
