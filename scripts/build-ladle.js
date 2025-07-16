@@ -35,7 +35,7 @@ const ladleProcess = spawn(cmd, args, { stdio: 'inherit', shell: true })
 // ladleProcess.on('exit', (code) => process.exit(code))
 ladleProcess.on('exit', (code) => {
   if (code === 0) {
-    const outputDir = 'build'
+    const outputDir = 'docs'
     const nojekyllPath = join(outputDir, '.nojekyll')
     try {
       writeFileSync(nojekyllPath, '')
