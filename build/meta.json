@@ -5,6 +5,17 @@
     "version": 1
   },
   "stories": {
+    "-github--github-repository": {
+      "name": "Github repository",
+      "levels": [
+        " github"
+      ],
+      "locStart": 3,
+      "locEnd": 16,
+      "filePath": "src/stories/_github.stories.tsx",
+      "namedExport": "GitHubStory",
+      "meta": {}
+    },
     "alert--alert": {
       "name": "Alert",
       "levels": [
