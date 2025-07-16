@@ -1,5 +1,7 @@
 import { spawn } from 'child_process'
 import { config } from 'dotenv'
+import { writeFileSync } from 'fs'
+import { join } from 'path'
 config()
 
 const variant = process.env.VITE_VARIANT_MAPPING
@@ -30,4 +32,20 @@ const [cmd, ...args] = command.split(' ')
 
 const ladleProcess = spawn(cmd, args, { stdio: 'inherit', shell: true })
 
-ladleProcess.on('exit', (code) => process.exit(code))
+// ladleProcess.on('exit', (code) => process.exit(code))
+ladleProcess.on('exit', (code) => {
+  if (code === 0) {
+    const outputDir = 'build'
+    const nojekyllPath = join(outputDir, '.nojekyll')
+    try {
+      writeFileSync(nojekyllPath, '')
+      console.log(`✅ .nojekyll bestand aangemaakt in ${outputDir}`)
+    } catch (err) {
+      console.error(`⚠️ Fout bij aanmaken .nojekyll:`, err)
+    }
+  } else {
+    console.error(`🚫 Build mislukt met code: ${code}`)
+  }
+
+  process.exit(code)
+})

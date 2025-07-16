@@ -5,7 +5,6 @@ import { Story } from '@ladle/react'
 import ArrowRightIcon from '@/assets/images/arrow-right.svg'
 import Hero from '@/components/Hero'
 import ReactLogo from '@/assets/images/react.png'
-import { Code } from 'node_modules/@ladle/react/typings-for-build/app/src/ui'
 
 export const HeroStory: Story = () => {
   return (
@@ -69,15 +68,14 @@ import ReactLogo from '@/assets/images/react.png'`}
     </p>
     <a href="/?story=hero--hero" class="hero-container__primary-link">
       Get started
-      <svg class="-mr-1 ml-2 h-5 w-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path>
-      </svg>
+      <svg>...</svg>
     </a>
     <a href="/?story=hero--hero" class="hero-container__secondary-link">
       Learn more
     </a>
   </div>
   <div class="hero-container__right">
-    <img alt="hero" src="/@fs/C:/Users/Dirk/Desktop/simple-react-components/src/assets/images/react.svg">
+    <img alt="hero" src="...">
   </div>
 </section>`}
       />

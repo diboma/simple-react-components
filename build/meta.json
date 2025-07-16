@@ -1,0 +1,141 @@
+{
+  "about": {
+    "homepage": "https://www.ladle.dev",
+    "github": "https://github.com/tajo/ladle",
+    "version": 1
+  },
+  "stories": {
+    "alert--alert": {
+      "name": "Alert",
+      "levels": [
+        "Alert"
+      ],
+      "locStart": 7,
+      "locEnd": 71,
+      "filePath": "src/stories/alert.stories.tsx",
+      "namedExport": "AlertStory",
+      "meta": {}
+    },
+    "badge--badge": {
+      "name": "Badge",
+      "levels": [
+        "Badge"
+      ],
+      "locStart": 7,
+      "locEnd": 55,
+      "filePath": "src/stories/badge.stories.tsx",
+      "namedExport": "BadgeStory",
+      "meta": {}
+    },
+    "button--01-primary": {
+      "name": "01 primary",
+      "levels": [
+        "Button"
+      ],
+      "locStart": 11,
+      "locEnd": 11,
+      "filePath": "src/stories/button.stories.tsx",
+      "namedExport": "Primary",
+      "meta": {}
+    },
+    "button--02-secondary": {
+      "name": "02 secondary",
+      "levels": [
+        "Button"
+      ],
+      "locStart": 14,
+      "locEnd": 14,
+      "filePath": "src/stories/button.stories.tsx",
+      "namedExport": "Secondary",
+      "meta": {}
+    },
+    "button--03-success": {
+      "name": "03 success",
+      "levels": [
+        "Button"
+      ],
+      "locStart": 17,
+      "locEnd": 17,
+      "filePath": "src/stories/button.stories.tsx",
+      "namedExport": "Success",
+      "meta": {}
+    },
+    "button--04-danger": {
+      "name": "04 danger",
+      "levels": [
+        "Button"
+      ],
+      "locStart": 20,
+      "locEnd": 20,
+      "filePath": "src/stories/button.stories.tsx",
+      "namedExport": "Danger",
+      "meta": {}
+    },
+    "button--05-warning": {
+      "name": "05 warning",
+      "levels": [
+        "Button"
+      ],
+      "locStart": 23,
+      "locEnd": 23,
+      "filePath": "src/stories/button.stories.tsx",
+      "namedExport": "Warning",
+      "meta": {}
+    },
+    "button--06-info": {
+      "name": "06 info",
+      "levels": [
+        "Button"
+      ],
+      "locStart": 26,
+      "locEnd": 26,
+      "filePath": "src/stories/button.stories.tsx",
+      "namedExport": "Info",
+      "meta": {}
+    },
+    "button--07-light": {
+      "name": "07 light",
+      "levels": [
+        "Button"
+      ],
+      "locStart": 29,
+      "locEnd": 29,
+      "filePath": "src/stories/button.stories.tsx",
+      "namedExport": "Light",
+      "meta": {}
+    },
+    "button--08-dark": {
+      "name": "08 dark",
+      "levels": [
+        "Button"
+      ],
+      "locStart": 32,
+      "locEnd": 32,
+      "filePath": "src/stories/button.stories.tsx",
+      "namedExport": "Dark",
+      "meta": {}
+    },
+    "checkbox--checkbox": {
+      "name": "Checkbox",
+      "levels": [
+        "Checkbox"
+      ],
+      "locStart": 7,
+      "locEnd": 102,
+      "filePath": "src/stories/checkbox.stories.tsx",
+      "namedExport": "CheckboxStory",
+      "meta": {}
+    },
+    "hero--hero": {
+      "name": "Hero",
+      "levels": [
+        "Hero"
+      ],
+      "locStart": 9,
+      "locEnd": 84,
+      "filePath": "src/stories/hero.stories.tsx",
+      "namedExport": "HeroStory",
+      "meta": {}
+    }
+  }
+}

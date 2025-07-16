@@ -1,6 +1,6 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
-import { CURRENT_VARIANT_MAPPING } from './lib/consts.ts'
+import { CURRENT_VARIANT_MAPPING } from '@/lib/consts.ts'
 
 async function loadApp() {
   let AppComponent
