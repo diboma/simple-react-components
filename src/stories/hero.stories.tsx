@@ -17,10 +17,10 @@ export const HeroStory: Story = () => {
       <Hero
         title="The only React library you'll ever need"
         description="Simplify your development with our comprehensive, easy-to-use, and highly customizable React components. Build stunning UIs faster and more efficiently."
-        primaryLink="/?story=hero--hero"
+        primaryLink="#"
         primaryLinkLabel="Get started"
         primaryLinkIcon={<ArrowRightIcon />}
-        secondaryLink="/?story=hero--hero"
+        secondaryLink="#"
         secondaryLinkLabel="Learn more"
         image={ReactLogo}
       />
