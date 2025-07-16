@@ -5,10 +5,11 @@ import './CodeBlock.css'
 type Props = {
   code: string
   showCopyButton?: boolean
+  style?: React.CSSProperties
 }
 
-export const CodeBlock = ({ code, showCopyButton = true }: Props) => (
-  <div className="code-block">
+export const CodeBlock = ({ code, showCopyButton = true, style }: Props) => (
+  <div className="code-block" style={style}>
     {showCopyButton && (
       <button
         onClick={() => navigator.clipboard.writeText(code)}

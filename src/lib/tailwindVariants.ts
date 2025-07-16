@@ -51,4 +51,14 @@ export const tailwindVariantMap = {
             focus:ring-2 dark:bg-gray-700 dark:border-gray-600`,
     label: 'ms-2 text-sm font-medium text-gray-900 dark:text-gray-300',
   },
+  Hero: {
+    container: `mx-auto grid max-w-screen-xl px-4 py-8 lg:grid-cols-12 lg:gap-8 lg:py-16 xl:gap-0`,
+    left: `mr-auto place-self-center lg:col-span-7`,
+    right: `hidden lg:col-span-5 lg:mt-0 lg:flex`,
+    title: `xl:text-6x mb-4 max-w-2xl text-4xl leading-none font-extrabold tracking-tight md:text-5xl`,
+    description: `mb-6 max-w-2xl font-light text-gray-500 md:text-lg lg:mb-8 lg:text-xl`,
+    primaryLink: `bg-primary hover:bg-primary-hover focus:ring-primary-300 mr-3 inline-flex items-center justify-center rounded-lg px-5 py-3 text-center text-base font-medium text-white focus:ring-4`,
+    primaryIcon: `-mr-1 ml-2 text-white`,
+    secondaryLink: `border-secondary hover:bg-secondary-hover inline-flex items-center justify-center rounded-lg border px-5 py-3 text-center text-base font-medium text-gray-900 focus:ring-4 focus:ring-gray-100`,
+  },
 }

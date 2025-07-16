@@ -47,4 +47,14 @@ export const bootstrapVariantMap = {
     input: 'form-check-input',
     label: 'form-check-label',
   },
+  Hero: {
+    container: `container py-5 px-3 px-lg-4 row gx-lg-5 gy-4 align-items-center`,
+    left: `col-lg-7`,
+    right: `col-lg-5 d-none d-lg-flex justify-content-center`,
+    title: `fw-bold display-4 mb-3 mb-md-4 lh-sm`,
+    description: `text-muted mb-4 mb-lg-5 fs-5`,
+    primaryLink: `btn btn-primary me-3 d-inline-flex align-items-center justify-content-center px-4 py-2 fs-6 fw-medium`,
+    primaryIcon: `ms-2 text-white`,
+    secondaryLink: `btn btn-outline-secondary d-inline-flex align-items-center justify-content-center px-4 py-2 fs-6 fw-medium text-dark`,
+  },
 }

@@ -22,3 +22,14 @@ export const containerStyles: React.CSSProperties = {
   margin: '0 auto',
   marginBottom: '2rem',
 }
+
+export const heroContainerStyles: React.CSSProperties = {
+  position: 'relative',
+  display: 'flex',
+  flexDirection: 'column',
+  gap: '1rem',
+  minWidth: 320,
+  maxWidth: 1200,
+  margin: '0 auto',
+  marginBottom: '2rem',
+}
