@@ -2,14 +2,21 @@ import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter'
 import { materialLight } from 'react-syntax-highlighter/dist/esm/styles/prism'
 import './CodeBlock.css'
 
-export const CodeBlock = ({ code }: { code: string }) => (
+type Props = {
+  code: string
+  showCopyButton?: boolean
+}
+
+export const CodeBlock = ({ code, showCopyButton = true }: Props) => (
   <div className="code-block">
-    <button
-      onClick={() => navigator.clipboard.writeText(code)}
-      className="copy-button"
-    >
-      Copy
-    </button>
+    {showCopyButton && (
+      <button
+        onClick={() => navigator.clipboard.writeText(code)}
+        className="copy-button"
+      >
+        Copy
+      </button>
+    )}
 
     <SyntaxHighlighter
       language="tsx"

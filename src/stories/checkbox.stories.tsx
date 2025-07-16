@@ -28,15 +28,13 @@ export const CheckboxStory: Story = () => {
   onChange={() => { alert('Checkbox clicked') }}
 />`}
         />
-      </div>
-
-      <div>
         <i>
           Note: If you choose the 'vanilla' variant mapping, the checkbox will
           be rendered with the following class names (so you can style it
           accordingly):
         </i>
         <CodeBlock
+          showCopyButton={false}
           code={`<div class="form-check">
   <input class="form-check-input" type="checkbox" value="remember-me" id="check-default">
   <label class="form-check-label" for="check-default">
