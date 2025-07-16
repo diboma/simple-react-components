@@ -11,6 +11,10 @@ This repository provides **two main features**:
 
 The component library uses [Ladle](https://ladle.dev/) for local previewing and documenting UI components. It supports three style variants: **Bootstrap**, **Tailwind**, and **vanilla CSS**.
 
+## Credits
+
+Some components in this library are inspired by or adapted from [Flowbite](https://flowbite.com/), an open-source UI component library built with Tailwind CSS. We acknowledge and appreciate the work of the Flowbite team and contributors.
+
 ## 🚀 React App Development
 
 The boilerplate includes a complete React application that dynamically loads the appropriate styling framework based on your configuration. Perfect for:
