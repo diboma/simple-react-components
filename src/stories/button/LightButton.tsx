@@ -1,11 +1,12 @@
-import { CodeBlock } from '@/stories/utils/CodeBlock'
-import { containerStyles, currentMappingStyles } from '@/stories/utils/styles'
-import { CURRENT_VARIANT_MAPPING } from '@/lib/consts'
 import Button from '@/components/Button'
+import { CURRENT_VARIANT_MAPPING } from '@/lib/consts'
+import { CodeBlock } from '@/stories/utils/CodeBlock'
+import { currentMappingStyles } from '@/stories/utils/styles'
+import '../stories.css'
 
 const LightButton = () => {
   return (
-    <main style={containerStyles}>
+    <main className="container">
       <h1>Light Button</h1>
 
       <span style={currentMappingStyles}>{CURRENT_VARIANT_MAPPING}</span>

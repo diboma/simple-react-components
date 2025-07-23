@@ -1,15 +1,21 @@
-import { CodeBlock } from '@/stories/utils/CodeBlock'
-import { containerStyles, currentMappingStyles } from '@/stories/utils/styles'
-import { CURRENT_VARIANT_MAPPING } from '@/lib/consts'
-import { Story } from '@ladle/react'
 import Alert from '@/components/Alert'
+import { CURRENT_VARIANT_MAPPING } from '@/lib/consts'
+import { CodeBlock } from '@/stories/utils/CodeBlock'
+import { currentMappingStyles } from '@/stories/utils/styles'
+import { Story } from '@ladle/react'
+import './stories.css'
 
 export const AlertStory: Story = () => {
   return (
-    <main style={containerStyles}>
+    <main className="container">
       <h1>Alert</h1>
 
       <span style={currentMappingStyles}>{CURRENT_VARIANT_MAPPING}</span>
+
+      <h3>Props</h3>
+      <div></div>
+
+      <h3>Examples</h3>
 
       <div style={{ marginBottom: '1rem' }}>
         <Alert variant="primary">This is a primary alert!</Alert>

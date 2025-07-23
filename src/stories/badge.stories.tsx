@@ -1,12 +1,13 @@
-import { CodeBlock } from '@/stories/utils/CodeBlock'
-import { containerStyles, currentMappingStyles } from '@/stories/utils/styles'
-import { CURRENT_VARIANT_MAPPING } from '@/lib/consts'
-import { Story } from '@ladle/react'
 import Badge from '@/components/Badge'
+import { CURRENT_VARIANT_MAPPING } from '@/lib/consts'
+import { CodeBlock } from '@/stories/utils/CodeBlock'
+import { currentMappingStyles } from '@/stories/utils/styles'
+import { Story } from '@ladle/react'
+import './stories.css'
 
 export const BadgeStory: Story = () => {
   return (
-    <main style={containerStyles}>
+    <main className="container">
       <h1>Badge</h1>
 
       <span style={currentMappingStyles}>{CURRENT_VARIANT_MAPPING}</span>

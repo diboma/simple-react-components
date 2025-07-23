@@ -11,18 +11,6 @@ export const currentMappingStyles: React.CSSProperties = {
   borderRadius: '4px',
   zIndex: 10,
 }
-
-export const containerStyles: React.CSSProperties = {
-  position: 'relative',
-  display: 'flex',
-  flexDirection: 'column',
-  gap: '1rem',
-  minWidth: 320,
-  maxWidth: 640,
-  margin: '0 auto',
-  marginBottom: '2rem',
-}
-
 export const heroContainerStyles: React.CSSProperties = {
   position: 'relative',
   display: 'flex',

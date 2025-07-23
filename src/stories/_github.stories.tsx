@@ -1,7 +1,7 @@
-import { containerStyles } from './utils/styles'
+import './stories.css'
 
 export const GitHubStory = () => (
-  <main style={containerStyles}>
+  <main className="container">
     <h1>Simple React Components</h1>
 
     <ul style={{ fontSize: '1.1rem' }}>

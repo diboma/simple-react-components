@@ -4,11 +4,17 @@ import './CodeBlock.css'
 
 type Props = {
   code: string
+  language?: string
   showCopyButton?: boolean
   style?: React.CSSProperties
 }
 
-export const CodeBlock = ({ code, showCopyButton = true, style }: Props) => (
+export const CodeBlock = ({
+  code,
+  language = 'tsx',
+  showCopyButton = true,
+  style,
+}: Props) => (
   <div className="code-block" style={style}>
     {showCopyButton && (
       <button
@@ -20,7 +26,7 @@ export const CodeBlock = ({ code, showCopyButton = true, style }: Props) => (
     )}
 
     <SyntaxHighlighter
-      language="tsx"
+      language={language}
       style={materialLight}
       customStyle={{
         padding: '0.5rem',

@@ -1,12 +1,13 @@
-import { CodeBlock } from '@/stories/utils/CodeBlock'
-import { containerStyles, currentMappingStyles } from '@/stories/utils/styles'
-import { CURRENT_VARIANT_MAPPING } from '@/lib/consts'
-import { Story } from '@ladle/react'
 import Checkbox from '@/components/Checkbox'
+import { CURRENT_VARIANT_MAPPING } from '@/lib/consts'
+import { CodeBlock } from '@/stories/utils/CodeBlock'
+import { currentMappingStyles } from '@/stories/utils/styles'
+import { Story } from '@ladle/react'
+import './stories.css'
 
 export const CheckboxStory: Story = () => {
   return (
-    <main style={containerStyles}>
+    <main className="container">
       <h1>Checkbox</h1>
 
       <span style={currentMappingStyles}>{CURRENT_VARIANT_MAPPING}</span>

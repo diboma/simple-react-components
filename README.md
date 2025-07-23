@@ -45,8 +45,9 @@ VITE_VARIANT_MAPPING=tailwind
 > Only **one** line should be active (uncommented). The other variants must remain commented out.
 > 
 > **For vanilla variant**: 
->   - Add your own class names when using the components
->   - Put your CSS in `src/assets/styles/vanilla.css`
+> 
+> - Add your own class names when using the components
+> - Put your CSS in `src/assets/styles/vanilla.css`
 
 ---
 
@@ -59,6 +60,7 @@ If you're using the **Tailwind** variant, you can customize colors, typography, 
 ```
 
 This file defines:
+
 - Theme colors (e.g. `primary`, `danger`, `success`)
 - Optional hover variants (e.g. `primaryHover`)
 - Typography settings (e.g. font families)
@@ -77,6 +79,7 @@ npm run ladle
 ```
 
 This command:
+
 - Cleans previously generated styles
 - Builds the correct variant's CSS
 - Starts Ladle at [http://localhost:8000](http://localhost:8000)
@@ -96,11 +99,13 @@ This starts your React app at [http://localhost:5173](http://localhost:5173) wit
 ### 📦 Build Commands
 
 **Build component previews:**
+
 ```bash
 npm run ladle:build
 ```
 
 **Build React app:**
+
 ```bash
 npm run build
 ```

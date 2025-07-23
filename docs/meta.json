@@ -21,8 +21,8 @@
       "levels": [
         "Alert"
       ],
-      "locStart": 7,
-      "locEnd": 71,
+      "locStart": 8,
+      "locEnd": 77,
       "filePath": "src/stories/alert.stories.tsx",
       "namedExport": "AlertStory",
       "meta": {}
@@ -32,8 +32,8 @@
       "levels": [
         "Badge"
       ],
-      "locStart": 7,
-      "locEnd": 55,
+      "locStart": 8,
+      "locEnd": 56,
       "filePath": "src/stories/badge.stories.tsx",
       "namedExport": "BadgeStory",
       "meta": {}
@@ -131,8 +131,8 @@
       "levels": [
         "Checkbox"
       ],
-      "locStart": 7,
-      "locEnd": 102,
+      "locStart": 8,
+      "locEnd": 103,
       "filePath": "src/stories/checkbox.stories.tsx",
       "namedExport": "CheckboxStory",
       "meta": {}
