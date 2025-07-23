@@ -11,6 +11,24 @@ export const BadgeStory: Story = () => {
 
       <span className="current-mapping">{CURRENT_VARIANT_MAPPING}</span>
 
+      <h2>Props</h2>
+
+      <ul className="props-list">
+        <li>
+          <span className="prop">variant?</span>: 'primary' | 'secondary' |
+          'success' | 'danger' | 'warning' | 'info' | 'light' | 'dark' | null |
+          undefined
+        </li>
+        <li>
+          <span className="prop">className?</span>: string (defaults to: '')
+        </li>
+        <li>
+          <span className="prop">children?</span>: React.ReactNode
+        </li>
+      </ul>
+
+      <h2>Examples</h2>
+
       <div style={{ marginBottom: '1rem' }}>
         <Badge variant="primary">primary</Badge>
         <CodeBlock code={`<Badge variant="primary">primary</Badge>`} />

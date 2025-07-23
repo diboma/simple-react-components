@@ -11,10 +11,23 @@ export const AlertStory: Story = () => {
 
       <span className="current-mapping">{CURRENT_VARIANT_MAPPING}</span>
 
-      <h3>Props</h3>
-      <div></div>
+      <h2>Props</h2>
 
-      <h3>Examples</h3>
+      <ul className="props-list">
+        <li>
+          <span className="prop">variant?</span>: 'primary' | 'secondary' |
+          'success' | 'danger' | 'warning' | 'info' | 'light' | 'dark' | null |
+          undefined
+        </li>
+        <li>
+          <span className="prop">className?</span>: string (defaults to: '')
+        </li>
+        <li>
+          <span className="prop">children?</span>: React.ReactNode
+        </li>
+      </ul>
+
+      <h2>Examples</h2>
 
       <div style={{ marginBottom: '1rem' }}>
         <Alert variant="primary">This is a primary alert!</Alert>

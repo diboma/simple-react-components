@@ -10,7 +10,32 @@ const LightButton = () => {
 
       <span className="current-mapping">{CURRENT_VARIANT_MAPPING}</span>
 
-      <h2>Filled</h2>
+      <h2>Props</h2>
+
+      <ul className="props-list">
+        <li>
+          <span className="prop">type?</span>: 'button' | 'submit' | 'reset
+        </li>
+        <li>
+          <span className="prop">variant?</span>: 'light' | 'lightOutline'
+        </li>
+        <li>
+          <span className="prop">size?</span>: 'sm' | 'md' | 'lg' | null |
+          undefined
+        </li>
+        <li>
+          <span className="prop">onClick?</span>: (event: React.MouseEvent
+          {`<HTMLButtonElement>`}) ={`>`} void
+        </li>
+        <li>
+          <span className="prop">className?</span>: string (defaults to: '')
+        </li>
+        <li>
+          <span className="prop">children?</span>: React.ReactNode
+        </li>
+      </ul>
+
+      <h2>Examples: Filled</h2>
 
       <div>
         <h4>Small Button</h4>
@@ -42,7 +67,7 @@ const LightButton = () => {
         />
       </div>
 
-      <h2>Outline</h2>
+      <h2>Examples: Outline</h2>
 
       <div>
         <h4>Small Button</h4>

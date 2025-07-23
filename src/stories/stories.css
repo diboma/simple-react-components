@@ -22,3 +22,16 @@
   border-radius: 4px;
   z-index: 10;
 }
+
+.props-list {
+  font-family: monospace;
+  margin-top: -1rem;
+  margin-bottom: 1rem;
+  padding-left: 1rem;
+  list-style-type: disc;
+}
+
+.props-list .prop {
+  font-weight: bold;
+  background-color: #f4f4f4;
+}

@@ -11,6 +11,35 @@ export const CheckboxStory: Story = () => {
 
       <span className="current-mapping">{CURRENT_VARIANT_MAPPING}</span>
 
+      <h2>Props</h2>
+
+      <ul className="props-list">
+        <li>
+          <span className="prop">id</span>: string (defaults to: 'checkDefault')
+        </li>
+        <li>
+          <span className="prop">label?</span>: string | null (defaults to:
+          null)
+        </li>
+        <li>
+          <span className="prop">value?</span>: string (defaults to: '')
+        </li>
+        <li>
+          <span className="prop">className?</span>: string (defaults to: '')
+        </li>
+        <li>
+          <span className="prop">onChange?</span>: (event:
+          React.ChangeEventHandler{`<HTMLInputElement>`}) ={`>`} void
+        </li>
+        <li>
+          <span className="prop">..props</span>:{' '}
+          {`React.InputHTMLAttributes<HTMLInputElement>`} (any standard
+          attribute for an input element, like checked, disabled, etc.)
+        </li>
+      </ul>
+
+      <h2>Examples</h2>
+
       <div style={{ marginBottom: '1rem' }}>
         <Checkbox
           id="check-default"

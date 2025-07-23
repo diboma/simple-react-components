@@ -3,16 +3,16 @@ import { getActiveVariantMap } from '@/lib/variantSelector'
 type Props = React.InputHTMLAttributes<HTMLInputElement> & {
   id: string
   label?: string | null
-  className?: string
   value?: string
+  className?: string
   onChange?: (event: React.ChangeEventHandler<HTMLInputElement>) => void
 }
 
 const Checkbox = ({
   id = 'checkDefault',
   label = null,
-  className = '',
   value = '',
+  className = '',
   onChange,
   ...props
 }: Props) => {
