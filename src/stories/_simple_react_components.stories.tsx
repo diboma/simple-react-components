@@ -1,6 +1,6 @@
-import './stories.css'
+import { Story } from '@ladle/react'
 
-export const GitHubStory = () => (
+export const SimpleReactComponents: Story = () => (
   <main className="container">
     <h1>Simple React Components</h1>
 
@@ -28,4 +28,4 @@ export const GitHubStory = () => (
   </main>
 )
 
-GitHubStory.storyName = 'Github Repository'
+SimpleReactComponents.storyName = 'Github Repository'

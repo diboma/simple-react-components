@@ -1,0 +1,13 @@
+import{j as e}from"./index-Dx8mPDEb.js";import{g,C as y,a as m}from"./stories-CynN5EB6.js";const h=({type:a,label:u,name:s,helpText:r=void 0,value:i,onChange:c,...n})=>{var o,p,x;const t=g(),d=t?(o=t==null?void 0:t.Input)==null?void 0:o.input:"form-control",j=t?(p=t==null?void 0:t.Input)==null?void 0:p.label:"form-label",N=t?(x=t==null?void 0:t.Input)==null?void 0:x.helpText:"form-text";return e.jsxs("div",{style:{marginBottom:"1rem"},children:[e.jsxs("label",{htmlFor:"title",className:j,children:[u," ",n.required&&e.jsx("span",{className:"text-red-500",children:"*"})]}),r&&e.jsx("p",{className:N,children:r}),a==="textarea"?e.jsx("textarea",{id:s,name:s,value:i,onChange:l=>c(l),className:d,...n}):e.jsx("input",{type:a,id:s,name:s,value:i,onChange:l=>c(l),className:d,...n})]})},b=()=>e.jsxs("main",{className:"container",children:[e.jsx("h1",{children:"Input"}),e.jsx("span",{className:"current-mapping",children:y}),e.jsx("h2",{children:"Props"}),e.jsxs("ul",{className:"props-list",children:[e.jsxs("li",{children:[e.jsx("span",{className:"prop",children:"type"}),": React.HTMLInputTypeAttribute | 'textarea'"]}),e.jsxs("li",{children:[e.jsx("span",{className:"prop",children:"label"}),": string"]}),e.jsxs("li",{children:[e.jsx("span",{className:"prop",children:"name"}),": string"]}),e.jsxs("li",{children:[e.jsx("span",{className:"prop",children:"helpText?"}),": string | undefined"]}),e.jsxs("li",{children:[e.jsx("span",{className:"prop",children:"value"}),": string | number | readonly string[] | undefined"]}),e.jsxs("li",{children:[e.jsx("span",{className:"prop",children:"onChange"}),": ( e:"," ","React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>",") =",">"," ","void"]}),e.jsxs("li",{children:[e.jsx("span",{className:"prop",children:"..props"}),": ","React.InputHTMLAttributes"," ","(any standard attribute for an input element, like checked, disabled, readonly, etc.)"]})]}),e.jsx("h2",{children:"Examples"}),e.jsxs("div",{style:{marginBottom:"1rem"},children:[e.jsx("h3",{children:"Text input"}),e.jsx(h,{type:"text",label:"Title",name:"title",value:"",onChange:()=>{}}),e.jsx(m,{code:`<Input 
+  type="text"
+  label="Title"
+  name="title"
+  value=""
+  onChange={() => {}}
+/>`})]}),e.jsxs("div",{style:{marginBottom:"1rem"},children:[e.jsx("h3",{children:"Textarea"}),e.jsx(h,{type:"textarea",label:"Description",name:"description",value:"",onChange:()=>{}}),e.jsx(m,{code:`<Input 
+  type="textarea"
+  label="Description"
+  name="description"
+  value=""
+  onChange={() => {}}
+/>`})]})]});b.storyName="Input";typeof window<"u"&&window.document&&window.document.createElement&&document.documentElement.setAttribute("data-storyloaded","");export{b as InputStory};

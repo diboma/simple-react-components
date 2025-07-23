@@ -5,15 +5,15 @@
     "version": 1
   },
   "stories": {
-    "-github--github-repository": {
+    "-simple-react-components--github-repository": {
       "name": "Github repository",
       "levels": [
-        " github"
+        " simple react components"
       ],
       "locStart": 3,
       "locEnd": 29,
-      "filePath": "src/stories/_github.stories.tsx",
-      "namedExport": "GitHubStory",
+      "filePath": "src/stories/_simple_react_components.stories.tsx",
+      "namedExport": "SimpleReactComponents",
       "meta": {}
     },
     "alert--alert": {

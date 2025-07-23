@@ -17,9 +17,27 @@
       crossorigin="use-credentials"
     />
     <title>Ladle</title>
-    <script type="module" crossorigin src="/simple-react-components/assets/index-IS1k7MNw.js"></script>
+    <script type="module" crossorigin src="/simple-react-components/assets/index-Dx8mPDEb.js"></script>
     <link rel="stylesheet" crossorigin href="/simple-react-components/assets/index-BI-qi2YE.css">
-  </head>
+  
+    <style>
+      ul[role="tree"] > li > div {
+        text-transform: capitalize;
+      }
+    </style>
+    <script>
+      window.addEventListener('DOMContentLoaded', () => {
+        const items = document.querySelectorAll('ul[role="tree"] li[role="treeitem"] > div');
+        items.forEach(item => {
+          const innerText = item.textContent.trim().toLowerCase();
+          if (innerText === 'simple react components') {
+            item.style.fontWeight = 'bold';
+            item.style.color = '#c0392b';
+          }
+        });
+      });
+    </script>
+    </head>
 
   <body>
     <div class="ladle-background"></div>
