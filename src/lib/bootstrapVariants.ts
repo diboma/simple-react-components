@@ -57,4 +57,9 @@ export const bootstrapVariantMap = {
     primaryIcon: `ms-2 text-white`,
     secondaryLink: `btn btn-outline-secondary d-inline-flex align-items-center justify-content-center px-4 py-2 fs-6 fw-medium text-dark`,
   },
+  Input: {
+    input: 'form-control',
+    label: 'form-label',
+    helpText: 'form-text',
+  },
 }

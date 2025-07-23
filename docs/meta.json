@@ -143,9 +143,20 @@
         "Hero"
       ],
       "locStart": 9,
-      "locEnd": 125,
+      "locEnd": 131,
       "filePath": "src/stories/hero.stories.tsx",
       "namedExport": "HeroStory",
+      "meta": {}
+    },
+    "input--input": {
+      "name": "Input",
+      "levels": [
+        "Input"
+      ],
+      "locStart": 7,
+      "locEnd": 93,
+      "filePath": "src/stories/input.stories.tsx",
+      "namedExport": "InputStory",
       "meta": {}
     }
   }

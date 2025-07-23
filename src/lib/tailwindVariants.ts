@@ -57,8 +57,15 @@ export const tailwindVariantMap = {
     right: `hidden lg:col-span-5 lg:mt-0 lg:flex`,
     title: `xl:text-6x mb-4 max-w-2xl text-4xl leading-none font-extrabold tracking-tight md:text-5xl`,
     description: `mb-6 max-w-2xl font-light text-gray-500 md:text-lg lg:mb-8 lg:text-xl`,
-    primaryLink: `bg-primary hover:bg-primary-hover focus:ring-primary-300 mr-3 inline-flex items-center justify-center rounded-lg px-5 py-3 text-center text-base font-medium text-white focus:ring-4`,
+    primaryLink: `bg-primary hover:bg-primary-hover focus:ring-primary-300 mr-3 inline-flex items-center 
+                  justify-center rounded-lg px-5 py-3 text-center text-base font-medium text-white focus:ring-4`,
     primaryIcon: `-mr-1 ml-2 text-white`,
-    secondaryLink: `border-secondary hover:bg-secondary-hover inline-flex items-center justify-center rounded-lg border px-5 py-3 text-center text-base font-medium text-gray-900 focus:ring-4 focus:ring-gray-100`,
+    secondaryLink: `border-secondary hover:bg-secondary-hover inline-flex items-center justify-center rounded-lg 
+                    border px-5 py-3 text-center text-base font-medium text-gray-900 focus:ring-4 focus:ring-gray-100`,
+  },
+  Input: {
+    input: `w-full rounded-md border border-gray-300 p-2 focus:ring-2 focus:ring-blue-500 focus:outline-none`,
+    label: 'mb-1 block font-medium text-gray-700',
+    helpText: 'mb-2 text-sm text-gray-500',
   },
 }

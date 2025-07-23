@@ -63,9 +63,10 @@ export const HeroStory: Story = () => {
 
         <h2>Code for the example above</h2>
 
-        <CodeBlock
-          style={{ marginTop: '-.25rem' }}
-          code={`<Hero
+        <div>
+          <CodeBlock
+            style={{ marginTop: '-.25rem' }}
+            code={`<Hero
   title="The only React library you'll ever need"
   description="Simplify your development with our comprehensive, easy-to-use, and highly customizable React components. Build stunning UIs faster and more efficiently."
   primaryLink="#"
@@ -75,29 +76,33 @@ export const HeroStory: Story = () => {
   secondaryLinkLabel="Learn more"
   image={ReactLogo}
 />`}
-        />
+          />
+        </div>
 
-        <i>
-          Note: the button icon should be an SVG, but the image not. For
-          example:
-        </i>
-        <CodeBlock
-          style={{ marginTop: '-.25rem' }}
-          showCopyButton={false}
-          code={`import ArrowRightIcon from '@/assets/images/arrow-right.svg'
+        <div style={{ marginBottom: '1rem' }}>
+          <i>
+            Note: the button icon should be an SVG, but the image not. For
+            example:
+          </i>
+
+          <CodeBlock
+            style={{ marginTop: '-.25rem' }}
+            showCopyButton={false}
+            code={`import ArrowRightIcon from '@/assets/images/arrow-right.svg'
 import ReactLogo from '@/assets/images/react.png'
 `}
-        />
+          />
 
-        <i>
-          Note: If you choose the 'vanilla' variant mapping, the hero will be
-          rendered with the following class names (so you can style it
-          accordingly):
-        </i>
-        <CodeBlock
-          style={{ marginTop: '-.25rem' }}
-          showCopyButton={false}
-          code={`<section class="hero-container">
+          <i>
+            Note: If you choose the 'vanilla' variant mapping, the hero will be
+            rendered with the following class names (so you can style it
+            accordingly):
+          </i>
+
+          <CodeBlock
+            style={{ marginTop: '-.25rem' }}
+            showCopyButton={false}
+            code={`<section class="hero-container">
   <div class="hero-container__left">
     <h1 class="hero-container__title">
       The only React library you'll ever need
@@ -118,7 +123,8 @@ import ReactLogo from '@/assets/images/react.png'
     <img alt="hero" src="...">
   </div>
 </section>`}
-        />
+          />
+        </div>
       </div>
     </main>
   )
