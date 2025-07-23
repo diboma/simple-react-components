@@ -1,17 +1,16 @@
-import { CodeBlock } from './utils/CodeBlock'
-import { CURRENT_VARIANT_MAPPING } from '@/lib/consts'
-import { currentMappingStyles } from './utils/styles'
-import { Story } from '@ladle/react'
 import ArrowRightIcon from '@/assets/images/arrow-right.svg'
 import ReactLogo from '@/assets/images/react.png'
 import Hero from '@/components/Hero'
+import { CURRENT_VARIANT_MAPPING } from '@/lib/consts'
+import { Story } from '@ladle/react'
+import { CodeBlock } from './utils/CodeBlock'
 
 export const HeroStory: Story = () => {
   return (
     <main style={{ marginBottom: '2rem' }}>
       <div style={{ position: 'relative' }}>
         <h1>Hero</h1>
-        <span style={currentMappingStyles}>{CURRENT_VARIANT_MAPPING}</span>
+        <span className="current-mapping">{CURRENT_VARIANT_MAPPING}</span>
       </div>
 
       <Hero

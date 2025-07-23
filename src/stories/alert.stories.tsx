@@ -1,7 +1,6 @@
 import Alert from '@/components/Alert'
 import { CURRENT_VARIANT_MAPPING } from '@/lib/consts'
 import { CodeBlock } from '@/stories/utils/CodeBlock'
-import { currentMappingStyles } from '@/stories/utils/styles'
 import { Story } from '@ladle/react'
 import './stories.css'
 
@@ -10,7 +9,7 @@ export const AlertStory: Story = () => {
     <main className="container">
       <h1>Alert</h1>
 
-      <span style={currentMappingStyles}>{CURRENT_VARIANT_MAPPING}</span>
+      <span className="current-mapping">{CURRENT_VARIANT_MAPPING}</span>
 
       <h3>Props</h3>
       <div></div>

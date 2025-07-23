@@ -1,7 +1,6 @@
 import Button from '@/components/Button'
 import { CURRENT_VARIANT_MAPPING } from '@/lib/consts'
 import { CodeBlock } from '@/stories/utils/CodeBlock'
-import { currentMappingStyles } from '@/stories/utils/styles'
 import '../stories.css'
 
 const LightButton = () => {
@@ -9,7 +8,7 @@ const LightButton = () => {
     <main className="container">
       <h1>Light Button</h1>
 
-      <span style={currentMappingStyles}>{CURRENT_VARIANT_MAPPING}</span>
+      <span className="current-mapping">{CURRENT_VARIANT_MAPPING}</span>
 
       <h2>Filled</h2>
 

@@ -1,7 +1,6 @@
 import Badge from '@/components/Badge'
 import { CURRENT_VARIANT_MAPPING } from '@/lib/consts'
 import { CodeBlock } from '@/stories/utils/CodeBlock'
-import { currentMappingStyles } from '@/stories/utils/styles'
 import { Story } from '@ladle/react'
 import './stories.css'
 
@@ -10,7 +9,7 @@ export const BadgeStory: Story = () => {
     <main className="container">
       <h1>Badge</h1>
 
-      <span style={currentMappingStyles}>{CURRENT_VARIANT_MAPPING}</span>
+      <span className="current-mapping">{CURRENT_VARIANT_MAPPING}</span>
 
       <div style={{ marginBottom: '1rem' }}>
         <Badge variant="primary">primary</Badge>
