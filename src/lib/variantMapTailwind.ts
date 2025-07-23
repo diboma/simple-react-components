@@ -1,6 +1,6 @@
 import { defaultTailwindStyles as styles } from '../../tailwind.theme.ts'
 
-export const tailwindVariantMap = {
+export default {
   Button: {
     primary: `${styles.button} bg-primary text-white hover:bg-primary-hover`,
     primaryOutline: `${styles.button} bg-transparent text-primary border border-primary hover:bg-primary hover:text-white`,
@@ -67,5 +67,13 @@ export const tailwindVariantMap = {
     input: `w-full rounded-md border border-gray-300 p-2 focus:ring-2 focus:ring-blue-500 focus:outline-none`,
     label: 'mb-1 block font-medium text-gray-700',
     helpText: 'mb-2 text-sm text-gray-500',
+    asterisk: 'text-red-500',
+  },
+  Select: {
+    container: 'w-full mx-auto mb-4',
+    label: `mb-2 block font-medium text-gray-700`,
+    asterisk: 'text-red-500',
+    helpText: `my2 text-sm text-gray-500`,
+    select: `bg-white border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5`,
   },
 }

@@ -79,28 +79,29 @@ export const HeroStory: Story = () => {
           />
         </div>
 
-        <div style={{ marginBottom: '1rem' }}>
-          <i>
-            Note: the button icon should be an SVG, but the image not. For
-            example:
-          </i>
+        <div>
+          <h2>Notes</h2>
+
+          <p>
+            The button icon should be an SVG, but the image not. For example:
+          </p>
 
           <CodeBlock
-            style={{ marginTop: '-.25rem' }}
+            style={{ marginTop: '-0.5rem' }}
             showCopyButton={false}
             code={`import ArrowRightIcon from '@/assets/images/arrow-right.svg'
 import ReactLogo from '@/assets/images/react.png'
 `}
           />
 
-          <i>
-            Note: If you choose the 'vanilla' variant mapping, the hero will be
-            rendered with the following class names (so you can style it
-            accordingly):
-          </i>
+          <p>
+            If you choose the 'vanilla' variant mapping, the hero will be
+            rendered using the following class names (so you can style it
+            accordingly). For example:
+          </p>
 
           <CodeBlock
-            style={{ marginTop: '-.25rem' }}
+            style={{ marginTop: '-0.5rem' }}
             showCopyButton={false}
             code={`<section class="hero-container">
   <div class="hero-container__left">
@@ -113,7 +114,7 @@ import ReactLogo from '@/assets/images/react.png'
     </p>
     <a href="..." class="hero-container__primary-link">
       Get started
-      <svg>...</svg>
+      <svg class="hero-container__primary-icon">...</svg>
     </a>
     <a href="..." class="hero-container__secondary-link">
       Learn more

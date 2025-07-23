@@ -22,38 +22,14 @@ const Hero = ({
   image = undefined,
 }: Props) => {
   const variantMap = getActiveVariantMap()
-
-  const containerStyle = variantMap
-    ? variantMap?.Hero?.container
-    : 'hero-container'
-
-  const containerLeftStyle = variantMap
-    ? variantMap?.Hero?.left
-    : 'hero-container__left'
-
-  const containerRightStyle = variantMap
-    ? variantMap?.Hero?.right
-    : 'hero-container__right'
-
-  const titleStyle = variantMap
-    ? variantMap?.Hero?.title
-    : 'hero-container__title'
-
-  const descriptionStyle = variantMap
-    ? variantMap?.Hero?.description
-    : 'hero-container__description'
-
-  const primaryLinkStyle = variantMap
-    ? variantMap?.Hero?.primaryLink
-    : 'hero-container__primary-link'
-
-  const primaryIconStyle = variantMap
-    ? variantMap?.Hero?.primaryIcon
-    : 'hero-container__primary-icon'
-
-  const secondaryLinkStyle = variantMap
-    ? variantMap?.Hero?.secondaryLink
-    : 'hero-container__secondary-link'
+  const containerStyle = variantMap?.Hero?.container
+  const containerLeftStyle = variantMap?.Hero?.left
+  const containerRightStyle = variantMap?.Hero?.right
+  const titleStyle = variantMap?.Hero?.title
+  const descriptionStyle = variantMap?.Hero?.description
+  const primaryLinkStyle = variantMap?.Hero?.primaryLink
+  const primaryIconStyle = variantMap?.Hero?.primaryIcon
+  const secondaryLinkStyle = variantMap?.Hero?.secondaryLink
 
   return (
     <section className={containerStyle}>

@@ -57,21 +57,6 @@ export const CheckboxStory: Story = () => {
   onChange={() => { alert('Checkbox clicked') }}
 />`}
         />
-        <i>
-          Note: If you choose the 'vanilla' variant mapping, the checkbox will
-          be rendered with the following class names (so you can style it
-          accordingly):
-        </i>
-        <CodeBlock
-          showCopyButton={false}
-          code={`<div class="form-check">
-  <input class="form-check-input" type="checkbox" value="remember-me" id="check-default">
-  <label class="form-check-label" for="check-default">
-    Default checkbox
-  </label>
-</div>
-`}
-        />
       </div>
 
       <div style={{ marginBottom: '1rem' }}>
@@ -124,6 +109,26 @@ export const CheckboxStory: Story = () => {
   disabled
   checked
 />`}
+        />
+      </div>
+
+      <div>
+        <h2>Note</h2>
+        <p>
+          If you choose the 'vanilla' variant mapping, the checkboxes will be
+          rendered using the Bootstrap class names (so you can style it
+          accordingly). For example:
+        </p>
+
+        <CodeBlock
+          showCopyButton={false}
+          code={`<div class="form-check">
+  <input type="checkbox" class="form-check-input" value="yes" id="remember-me">
+  <label class="form-check-label" for="remember-me">
+    Remember me
+  </label>
+</div>
+`}
         />
       </div>
     </main>

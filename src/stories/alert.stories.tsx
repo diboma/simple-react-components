@@ -84,6 +84,25 @@ export const AlertStory: Story = () => {
           code={`<Alert variant="dark">This is a dark alert!</Alert>`}
         />
       </div>
+
+      <div>
+        <h2>Note</h2>
+        <div style={{ marginBottom: '2rem' }}>
+          <p>
+            If you choose the 'vanilla' variant mapping, the alerts will be
+            rendered using the Bootstrap class names (so you can style it
+            accordingly). For example:
+          </p>
+
+          <CodeBlock
+            style={{ marginTop: '0.5rem' }}
+            showCopyButton={false}
+            code={`<div class="alert alert-primary" role="alert">
+  This is a primary alert!
+</div>`}
+          />
+        </div>
+      </div>
     </main>
   )
 }

@@ -68,6 +68,21 @@ export const BadgeStory: Story = () => {
         <Badge variant="dark">badge</Badge>
         <CodeBlock code={`<Badge variant="dark">badge</Badge>`} />
       </div>
+
+      <div>
+        <h2>Note</h2>
+        <p>
+          If you choose the 'vanilla' variant mapping, the badges will be
+          rendered using the Bootstrap class names (so you can style it
+          accordingly). For example:
+        </p>
+
+        <CodeBlock
+          style={{ marginTop: '0.5rem' }}
+          showCopyButton={false}
+          code={`<span class="badge bg-primary">primary</span>`}
+        />
+      </div>
     </main>
   )
 }

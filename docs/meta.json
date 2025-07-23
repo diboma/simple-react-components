@@ -22,7 +22,7 @@
         "Alert"
       ],
       "locStart": 7,
-      "locEnd": 89,
+      "locEnd": 108,
       "filePath": "src/stories/alert.stories.tsx",
       "namedExport": "AlertStory",
       "meta": {}
@@ -33,7 +33,7 @@
         "Badge"
       ],
       "locStart": 7,
-      "locEnd": 73,
+      "locEnd": 88,
       "filePath": "src/stories/badge.stories.tsx",
       "namedExport": "BadgeStory",
       "meta": {}
@@ -132,7 +132,7 @@
         "Checkbox"
       ],
       "locStart": 7,
-      "locEnd": 131,
+      "locEnd": 136,
       "filePath": "src/stories/checkbox.stories.tsx",
       "namedExport": "CheckboxStory",
       "meta": {}
@@ -143,7 +143,7 @@
         "Hero"
       ],
       "locStart": 9,
-      "locEnd": 131,
+      "locEnd": 132,
       "filePath": "src/stories/hero.stories.tsx",
       "namedExport": "HeroStory",
       "meta": {}
@@ -154,9 +154,20 @@
         "Input"
       ],
       "locStart": 7,
-      "locEnd": 93,
+      "locEnd": 140,
       "filePath": "src/stories/input.stories.tsx",
       "namedExport": "InputStory",
+      "meta": {}
+    },
+    "select--select": {
+      "name": "Select",
+      "levels": [
+        "Select"
+      ],
+      "locStart": 8,
+      "locEnd": 117,
+      "filePath": "src/stories/select.stories.tsx",
+      "namedExport": "SelectStory",
       "meta": {}
     }
   }

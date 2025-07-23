@@ -17,18 +17,9 @@ const Checkbox = ({
   ...props
 }: Props) => {
   const variantMap = getActiveVariantMap()
-
-  const containerStyle = variantMap
-    ? variantMap?.Checkbox?.container
-    : 'form-check'
-
-  const inputStyle = variantMap
-    ? variantMap?.Checkbox?.input
-    : 'form-check-input'
-
-  const labelStyle = variantMap
-    ? variantMap?.Checkbox?.label
-    : 'form-check-label'
+  const containerStyle = variantMap?.Checkbox?.container
+  const inputStyle = variantMap?.Checkbox?.input
+  const labelStyle = variantMap?.Checkbox?.label
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     if (onChange) {

@@ -1,15 +1,16 @@
 import { CURRENT_VARIANT_MAPPING } from './consts'
-import { bootstrapVariantMap } from './bootstrapVariants'
-import { tailwindVariantMap } from './tailwindVariants'
+import variantMapBootstrap from './variantMapBootstrap'
+import variantMapTailwind from './variantMapTailwind'
+import variantMapVanilla from './variantMapVanilla'
 
 export const getActiveVariantMap = () => {
   switch (CURRENT_VARIANT_MAPPING) {
     case 'bootstrap':
-      return bootstrapVariantMap
+      return variantMapBootstrap
     case 'tailwind':
-      return tailwindVariantMap
+      return variantMapTailwind
     case 'vanilla':
     default:
-      return null
+      return variantMapVanilla
   }
 }

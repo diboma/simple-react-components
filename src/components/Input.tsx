@@ -4,10 +4,10 @@ type Props = React.InputHTMLAttributes<
   HTMLInputElement | HTMLTextAreaElement
 > & {
   type: React.HTMLInputTypeAttribute | 'textarea'
-  label: string
   name: string
+  label?: string | undefined
   helpText?: string | undefined
-  value: string | number | readonly string[] | undefined
+  value?: string | number | readonly string[] | undefined
   onChange: (
     e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
   ) => void
@@ -15,23 +15,27 @@ type Props = React.InputHTMLAttributes<
 
 const Input = ({
   type,
-  label,
   name,
+  label = undefined,
   helpText = undefined,
-  value,
+  value = '',
   onChange,
   ...props
 }: Props) => {
   const variantMap = getActiveVariantMap()
-  const inputStyle = variantMap ? variantMap?.Input?.input : 'form-control'
-  const labelStyle = variantMap ? variantMap?.Input?.label : 'form-label'
-  const helpTextStyle = variantMap ? variantMap?.Input?.helpText : 'form-text'
+  const inputStyle = variantMap?.Input?.input
+  const labelStyle = variantMap?.Input?.label
+  const helpTextStyle = variantMap?.Input?.helpText
+  const asteriskStyle = variantMap?.Select?.asterisk
 
   return (
     <div style={{ marginBottom: '1rem' }}>
-      <label htmlFor="title" className={labelStyle}>
-        {label} {props.required && <span className="text-red-500">*</span>}
-      </label>
+      {label && (
+        <label htmlFor="title" className={labelStyle}>
+          {label}
+          {props.required && <span className={asteriskStyle}> *</span>}
+        </label>
+      )}
 
       {helpText && <p className={helpTextStyle}>{helpText}</p>}
 

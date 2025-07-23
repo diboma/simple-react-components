@@ -1,4 +1,4 @@
-export const bootstrapVariantMap = {
+export default {
   Button: {
     primary: 'btn btn-primary',
     primaryOutline: 'btn btn-outline-primary',
@@ -60,6 +60,14 @@ export const bootstrapVariantMap = {
   Input: {
     input: 'form-control',
     label: 'form-label',
-    helpText: 'form-text',
+    helpText: 'form-text mt-0 mb-1',
+    asterisk: 'text-danger',
+  },
+  Select: {
+    container: 'mb-4',
+    label: 'form-label',
+    asterisk: 'text-danger',
+    helpText: 'form-text mt-0 mb-1',
+    select: 'form-select',
   },
 }

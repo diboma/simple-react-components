@@ -98,6 +98,23 @@ const WarningButton = () => {
           code={`<Button variant="warningOutline" size="lg">Large Button</Button>`}
         />
       </div>
+
+      <div>
+        <h2>Note</h2>
+        <p>
+          If you choose the 'vanilla' variant mapping, the buttons will be
+          rendered using the Bootstrap class names (so you can style it
+          accordingly). For example:
+        </p>
+
+        <CodeBlock
+          style={{ marginTop: '0.5rem' }}
+          showCopyButton={false}
+          code={`<button type="button" class="btn btn-warning btn-sm">
+  Small Button
+</button>`}
+        />
+      </div>
     </main>
   )
 }
