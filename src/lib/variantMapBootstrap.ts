@@ -1,3 +1,5 @@
+import Spinner from '@/components/Spinner'
+
 export default {
   Button: {
     primary: 'btn btn-primary',
@@ -69,5 +71,20 @@ export default {
     asterisk: 'text-danger',
     helpText: 'form-text mt-0 mb-1',
     select: 'form-select',
+  },
+  Spinner: {
+    text: 'visually-hidden',
+    spinner: 'spinner-border',
+    borderSmall: null,
+    borderMedium: null,
+    borderLarge: null,
+    primary: 'text-primary',
+    secondary: 'text-secondary',
+    success: 'text-success',
+    danger: 'text-danger',
+    warning: 'text-warning',
+    info: 'text-info',
+    light: 'text-light',
+    dark: 'text-dark',
   },
 }

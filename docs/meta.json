@@ -169,6 +169,17 @@
       "filePath": "src/stories/select.stories.tsx",
       "namedExport": "SelectStory",
       "meta": {}
+    },
+    "spinner--spinner": {
+      "name": "Spinner",
+      "levels": [
+        "Spinner"
+      ],
+      "locStart": 7,
+      "locEnd": 173,
+      "filePath": "src/stories/spinner.stories.tsx",
+      "namedExport": "SpinnerStory",
+      "meta": {}
     }
   }
 }

@@ -35,3 +35,10 @@
   font-weight: bold;
   background-color: #f4f4f4;
 }
+
+.spinner-container {
+  display: flex;
+  align-items: end;
+  justify-content: start;
+  gap: 1rem;
+}
